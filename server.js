@@ -10,7 +10,6 @@ app.use(express.json());
 let tasks = [];
 let idCounter = 1;
 
-// Valid status options
 const validStatus = ["To Do", "In Progress", "Completed"];
 
 // 4. CRUD Routes with optional features
@@ -19,7 +18,6 @@ const validStatus = ["To Do", "In Progress", "Completed"];
 app.post("/tasks", (req, res) => {
   const { title, description, status } = req.body;
 
-  // Validate title
   if (!title) return res.status(400).json({ error: "Title is required" });
 
   // Validate status if provided
@@ -109,3 +107,4 @@ app.patch("/tasks/:id/complete", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
