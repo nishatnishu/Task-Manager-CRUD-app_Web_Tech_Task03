@@ -1,7 +1,9 @@
 Task Manager CRUD App – Web Tech Task 03
+
 📌 Description
 
 This project is a Task Manager Application built with Node.js and Express.js.
+
 It demonstrates CRUD operations (Create, Read, Update, Delete) using an in-memory storage system (no external database).
 
 The app allows users to manage tasks by adding, viewing, updating, deleting, searching, filtering, and sorting them.
@@ -32,8 +34,29 @@ Express.js
 JavaScript (ES6+)
 
 📂 Project Structure
+
 ├── node_modules/         # Dependencies
+
 ├── package.json          # Project metadata & dependencies
+
 ├── package-lock.json     # Dependency lock file
+
 ├── server.js             # Main server file (CRUD logic)
+
 └── README.md             # Project documentation
+
+
+✨ Optional Features Implemented
+
+
+In addition to the basic CRUD functionality, the following optional features were implemented:
+
+Filtering tasks by status.
+
+Searching tasks by title or description.
+
+Sorting tasks alphabetically by title.
+
+Marking tasks as Completed with a dedicated PATCH endpoint.
+
+Input validation to ensure proper task creation and updates.
